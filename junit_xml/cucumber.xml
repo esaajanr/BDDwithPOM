@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="2.61318">
+    <testcase classname="FB Application Test" name="FB login test" time="2.61318">
+        <failure message="java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)&#13;&#10;&#9;at qa.pages.FB_Login_Page.validate_Fb_Logo(FB_Login_Page.java:39)&#13;&#10;&#9;at qa.stepDefinition.FB_Login_Steps.verify_FB_logo_is_present(FB_Login_Steps.java:26)&#13;&#10;&#9;at ✽.Then verify FB logo is present(C:/Selenium/Selenium_Workspace/BDDwithPOM/src/main/java/qa/features/fb_login.feature:7)&#13;&#10;"><![CDATA[Given user open browser and go to url of login page.........................passed
+When title of login page is Facebook - Log In or Sign Up....................passed
+Then verify FB logo is present..............................................failed
+Then user enters username and password......................................skipped
+Then user click on logIn button.............................................skipped
+Then user see error message.................................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at qa.pages.FB_Login_Page.validate_Fb_Logo(FB_Login_Page.java:39)
+	at qa.stepDefinition.FB_Login_Steps.verify_FB_logo_is_present(FB_Login_Steps.java:26)
+	at ✽.Then verify FB logo is present(C:/Selenium/Selenium_Workspace/BDDwithPOM/src/main/java/qa/features/fb_login.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

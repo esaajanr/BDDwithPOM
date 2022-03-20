@@ -1,0 +1,109 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "#Without Examples"
+          }
+        ],
+        "line": 4,
+        "name": "FB login test",
+        "description": "",
+        "id": "fb-application-test;fb-login-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2605554800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open browser and go to url of login page",
+            "match": {
+              "location": "FB_Login_Steps.user_open_browser_and_go_to_url_of_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7120200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login page is Facebook - Log In or Sign Up",
+            "match": {
+              "location": "FB_Login_Steps.title_of_login_page_is_Facebook_Log_In_or_Sign_Up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 504999,
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat qa.pages.FB_Login_Page.validate_Fb_Logo(FB_Login_Page.java:39)\r\n\tat qa.stepDefinition.FB_Login_Steps.verify_FB_logo_is_present(FB_Login_Steps.java:26)\r\n\tat ✽.Then verify FB logo is present(C:/Selenium/Selenium_Workspace/BDDwithPOM/src/main/java/qa/features/fb_login.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "verify FB logo is present",
+            "match": {
+              "location": "FB_Login_Steps.verify_FB_logo_is_present()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters username and password",
+            "match": {
+              "location": "FB_Login_Steps.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on logIn button",
+            "match": {
+              "location": "FB_Login_Steps.user_click_on_logIn_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user see error message",
+            "match": {
+              "location": "FB_Login_Steps.user_see_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "close the browser",
+            "match": {
+              "location": "FB_Login_Steps.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "FB Application Test",
+    "description": "",
+    "id": "fb-application-test",
+    "keyword": "Feature",
+    "uri": "C:/Selenium/Selenium_Workspace/BDDwithPOM/src/main/java/qa/features/fb_login.feature"
+  }
+]
